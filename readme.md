@@ -1,3 +1,3 @@
 # Tourism Website
 
-A single page static website
+A single page static Tourism Website
