@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -54,13 +54,12 @@ body {
     border-radius: 9999px;
 }
 
-.nav-links a:hover{
+.nav-links a:hover {
     background-color: #333;
     color: #ccc;
 }
 
 .hamburger {
-    background-color: green;
     display: none;
     cursor: pointer;
 }
@@ -87,17 +86,13 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .home-container {
     text-align: center;
     color: white;
-}
-
-.part2 {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
 }
 
 .home-container h1 {
@@ -135,7 +130,7 @@ body {
 
 .home-left img {
     width: 80%;
-    /* border-radius: 50%; */
+    object-fit: cover;
 }
 
 .home-right {
@@ -155,7 +150,6 @@ body {
 }
 
 
-
 /* About Us */
 #about-us {
     padding: 80px 0;
@@ -164,7 +158,6 @@ body {
 
 .section-header {
     text-align: center;
-    margin-bottom: 80px;
     font-size: 36px;
 }
 
@@ -235,7 +228,7 @@ body {
     transition: 0.3s ease-in-out;
 }
 
-.tour-card:hover{
+.tour-card:hover {
     scale: 1.05;
 }
 
@@ -321,7 +314,7 @@ body {
     transition: 0.2s ease-in-out;
 }
 
-#contact-us button[type="submit"]:hover{
+#contact-us button[type="submit"]:hover {
     scale: 1.1;
 }
 
@@ -360,7 +353,7 @@ footer {
     text-align: center;
 }
 
-.demo-links a{
+.demo-links a {
     margin: 5px;
     color: white;
 }
@@ -403,14 +396,74 @@ footer {
         font-size: 16px;
     }
 
+    #home .part2 {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home-left {
+        width: 100%;
+    }
+
+    .home-right {
+        width: 100%;
+    }
+
+    .home-right p {
+        margin-bottom: 10px;
+    }
+
     #contact-us form {
         width: 80%;
+    }
+
+    .section-header{
+        margin-bottom: 20px;
+    }
+
+    #about-us {
+        padding: 30px 0;
+    }
+
+    .about-container {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .about-stats,
+    .about-achievements,
+    .about-reviews {
+        width: 100%;
+    }
+
+    .about-stats h2{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .about-achievements h2,
+    .about-reviews h2 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+    }
+
+    .about-stats p,
+    .about-achievements li,
+    .about-reviews p {
+        margin: 10px auto;
     }
 
     #about-us p,
     #tours ul,
     #contact-us p {
         width: 90%;
+    }
+
+    #tours {
+        padding: 20px 0;
     }
 
     #tours p {
